@@ -155,7 +155,7 @@ function generate_pdf()
 	else {
 		$UniqueString = $DBString;
 	}
-	$codeContents        = "http://scilab.localhost/case-study-project/certificates/verify/" . $UniqueString;
+	$codeContents        = "http://scilab.in/case-study-project/certificates/verify/" . $UniqueString;
 	$fileName            = 'generated_qrcode.png';
 	$pngAbsoluteFilePath = $tempDir . $fileName;
 	$urlRelativeFilePath = $path . "/pdf/temp_prcode/" . $fileName;
