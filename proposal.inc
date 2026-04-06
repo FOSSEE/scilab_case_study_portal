@@ -65,7 +65,7 @@ function scilab_case_study_proposal_form($form, &$form_state, $no_js_use = FALSE
 	$form['contributor_name'] = array(
 		'#type' => 'textfield',
 		'#title' => t('Name of the contributor'),
-		'#size' => 250,
+		'#size' => 100,
 		'#attributes' => array(
 			'placeholder' => t('Enter your full name.....')
 		),
@@ -152,7 +152,7 @@ function scilab_case_study_proposal_form($form, &$form_state, $no_js_use = FALSE
 	$form['faculty_email'] = array(
 		'#type' => 'textfield',
 		'#title' => t('Email id of the Faculty Member of your Institution, if any, who helped you with this Case Study Project'),
-		'#size' => 255,
+		'#size' => 100,
 		'#maxlength' => 255,
 		'#validated' => TRUE,
 		'#description' => t('<span style="color:red">Maximum character limit is 255</span>')
@@ -253,9 +253,9 @@ function scilab_case_study_proposal_form($form, &$form_state, $no_js_use = FALSE
 	$form['project_title'] = array(
 		'#type' => 'textfield',
 		'#title' => t('Project Title'),
-		'#size' => 250,
+		'#size' => 100,
 		'#maxlength' => 250,
-		'#description' => t('Maximum character limit is 250' . '<p style="color:red;font-weight:bold;"><span>Important: When mentioning the name of your chosen case study project in the proposal form, use this format: "NameOfCaseStudyProject (SCSH25)"</p>'),
+		'#description' => t('Maximum character limit is 250'),
 		'#required' => TRUE,
 		'#validated' => TRUE,
 	);
